@@ -1,0 +1,308 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  color: #333;
+
+}
+.wrap{
+   width: 1200px;
+   height: 700px;
+   margin: 0 auto; 
+   font-size: 50px; 
+}
+header.a{
+    width: 1200px;
+    height: 100px;
+    background-color: #d3671f;
+    display: flex;
+}
+
+.a>.a1{
+    width: 300px;
+    height: 100px;
+    background-color: #cfe778;
+}
+
+.a>.a2{
+    width: 900px;
+    height: 100px;
+    background-color: #99f037;
+    position: relative;
+}
+.a2 > .mainMenu {
+    font-size: 20px;
+    display: flex;
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.a2 > .mainMenu > ul {
+    width: 200px;
+}
+
+/* 메인 메뉴 */
+.a2 > .mainMenu > ul > li.menuItem {
+    width: 200px;
+    position: relative;
+}
+
+/* 탑 / 아우터 / 팬츠 / 악세사리 */
+.a2 > .mainMenu > ul > li.menuItem > a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    background-color: #99f037;
+    color: #333;
+
+    font-weight: 800;
+}
+
+/* 서브메뉴 */
+.a2 > .mainMenu > ul > li.menuItem > .subMenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    background-color: rgba(180, 238, 153, 0.9);
+    z-index: 100;
+}
+
+/* 서브메뉴 각각의 li */
+.a2 > .mainMenu > ul > li.menuItem > .subMenu li {
+    width: 200px;
+}
+
+/* 서브메뉴 링크 */
+.a2 > .mainMenu > ul > li.menuItem > .subMenu a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+
+/* 서브메뉴에 마우스를 올리면 */
+.a2 > .mainMenu > ul > li.menuItem > .subMenu a:hover {
+    color: #fff;
+    font-weight: 700;
+}
+
+.b{
+    width: 1200px;
+    height: 300px;
+    background-color: #5c92d8;
+}
+
+
+.tab-box{
+    width: 400px;
+    height: 200px;
+    margin: 2px;/* 위아래 50 오른쪽왼쪽 가운데 */
+}
+
+.tabs{
+    display: flex;
+    justify-content: right;
+}
+
+.tab{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    cursor: pointer; /* 커서 대면 손가락이나옴 */
+}
+
+/* 같은태그의 2개의 클래스지정 */
+.tab.active {
+
+    background-color: #fff;
+    font-weight: 800; /* 글씨 굵기 */
+
+}
+
+.content{
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 500px;
+    height: 200px;
+    background-color: #eee;
+}
+.content.active{
+    display: block; /* none의 반대가 block */
+}
+
+.content li {
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+
+}
+
+ul{
+    list-style-type: circle;
+}
+
+
+.gallery img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 2px;
+}
+
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+.c{
+    width: 1200px;
+    height: 200px;
+    
+    display: flex;
+}
+
+.c>.c1{
+    width: 400px;
+    height: 200px;
+    background-color: #ec78ec;
+}
+.c>.c2{
+    width: 400px;
+    height: 200px;
+    background-image: url("../images/banner.jpg");
+    position: relative;
+}
+
+.c .c2 .banner{
+    width: 100px;
+    padding: 14px 5px;
+    background-color: rgba(226, 157, 203, 0.7);
+    font-size: 14px;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-weight: 600;
+
+
+}
+
+.c2 .banner a:hover{
+    background-color: #5c92d8;
+}
+
+
+.c>.c3{
+    width: 400px;
+    height: 200px;
+    background-image: url(../images/direct.jpg);
+    position: relative;
+}
+
+.c .c3 .banner2{
+    width: 100px;
+    padding: 14px 5px;
+    background-color: rgba(226, 157, 203, 0.7);
+    font-size: 14px;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-weight: 600;
+}
+
+.c3 .banner2 a:hover{
+    background-color: #5c92d8;
+}
+.d{
+    width: 1200px;
+    height: 100px;
+    background-color: #7d25e2;
+    display: flex;
+}
+
+.d>.d1{
+    width: 200px;
+    height: 100px;
+    background-color: #464143;
+    
+}
+.d>.d1>img{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.d>.d2{
+    
+    align-items: center;
+    font-size: 20px;
+    width: 800px;
+    height: 100px;
+    background-color: #464143;
+}
+
+
+.d>.d2>.d2-1{
+    margin-top: 30px;
+}
+.d>.d3{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    width: 200px;
+    height: 100px;
+    background-color: #464143;
+}
+.d>.d3>.d3-1{
+        margin-top: 20px;
+}
+.d>.d3>.d3-2{
+        margin-top: 20px;
+}
+.d>.d3>.d3-3{
+        margin-top: 20px;
+}
+
+.d>.d3 img{
+        border-radius: 50%;
+}
+
+
